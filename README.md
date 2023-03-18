@@ -2,7 +2,7 @@
 
 <hr>
 
-HTML, CSS, SCSS used.
+HTML, CSS and SCSS were used for this Responsive website.
 
 <hr>
 
