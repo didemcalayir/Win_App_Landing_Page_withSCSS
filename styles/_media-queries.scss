@@ -1,0 +1,15 @@
+// when switching to the tablet state, it is called where it is used
+
+@mixin tablet{
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+//when switching to the phone state, it is called where it is used
+
+@mixin mobile {
+    @media screen and (max-width:540px) {
+        @content;
+    }
+}

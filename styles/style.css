@@ -1,0 +1,223 @@
+.navbar_menu_list, .navbar_menu, .navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_bars:hover, .navbar-logo:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.navbar-logo {
+  color: #222222;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.navbar_bars {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar_bars {
+    color: #222222;
+    opacity: 1;
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+.navbar_menu {
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .navbar_menu {
+    display: none;
+  }
+}
+.navbar_menu_list {
+  list-style-type: none;
+}
+.navbar_menu_list_item {
+  margin-left: 10px;
+  padding: 1px 0;
+}
+.navbar_menu_list_item-link {
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(9, 134, 34);
+  transition: 0.3s ease-in;
+}
+.navbar_menu_list_item-link:hover {
+  font-size: 19px;
+  color: #fb4fb4;
+  transition: 0.3s;
+}
+.navbar_menu_list_item #button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(9, 134, 34);
+  color: #f7f7f7;
+  margin-left: 20px;
+}
+.navbar_menu_list_item #button:hover {
+  background-color: #fb4fb4;
+  transition: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* showcase */
+.showcase_container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  height: 85vh;
+  width: 100%;
+  max-width: 1200px;
+  transition: all 1s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container {
+    grid-template-columns: 1fr;
+    height: 90%;
+  }
+}
+.showcase_container_left {
+  color: rgb(9, 134, 34);
+  width: 100%;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container_left {
+    padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .showcase_container_left {
+    line-height: 1.5;
+  }
+}
+.showcase_container_left h1 {
+  font-size: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container_left h1 {
+    font-size: 2rem;
+  }
+}
+.showcase_container_left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222222;
+}
+@media screen and (max-width: 540px) {
+  .showcase_container_left h2 {
+    font-size: 2rem;
+  }
+}
+.showcase_container_left p {
+  font-size: 1.5rem;
+  color: #222222;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 540px) {
+  .showcase_container_left p {
+    font-size: 1rem;
+  }
+}
+.showcase_container_left_signup {
+  position: relative;
+  padding: 15px 30px;
+  background-color: rgb(9, 134, 34);
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  outline: none;
+}
+.showcase_container_left_signup a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  z-index: 2;
+}
+.showcase_container_left_signup::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #fb4fb4;
+  transition: all 0.3s;
+}
+.showcase_container_left_signup:hover::after {
+  width: 100%;
+}
+.showcase_container_right {
+  position: relative;
+}
+.showcase_container_right-img1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.5s;
+}
+.showcase_container_right:hover .showcase_container_right-img1 {
+  display: inline;
+  width: 90%;
+  height: 90%;
+}
+.showcase_container_right img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #f7f7f7;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer address a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  footer address a {
+    font-size: 15px;
+  }
+}
+footer address a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
